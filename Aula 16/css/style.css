@@ -1,0 +1,79 @@
+
+.card {
+    margin: 100px auto;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 240px;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+  }
+  .image img{
+    z-index: 9;
+    display: flex;
+  }
+  .onda {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#3a87eb,#3f89eb 60%,#177cf0);
+  }
+  .site {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    top: -95px;
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+    font-family: sans-serif
+  }
+  .onda:nth-child(2),
+  .onda:nth-child(3) {
+    top: 210px;
+  }
+  .controle .onda {
+    border-radius: 40%;
+    animation: onda 3000ms infinite linear;
+  }
+  .onda {
+    border-radius: 40%;
+    animation: onda 55s infinite linear;
+  }
+  .controle .onda:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .onda:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .controle .onda:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .onda:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes onda {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
